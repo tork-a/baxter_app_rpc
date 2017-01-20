@@ -1,0 +1,19 @@
+## Simple extension of baxter_core_msgs.SolvePositionIK http://api.rethinkrobotics.com/baxter_core_msgs/html/srv/SolvePositionIK.html
+##
+#Request definition
+
+# Specify body part of the Baxter. Example: 'left', 'right'
+string body_part
+
+# Comment out for now. Seems like we can't embed another .srv into a .srv.
+# Asked why http://answers.ros.org/question/251444/embed-another-srv-files-inside-of-a-srv/
+##baxter_core_msgs/SolvePositionIK solve_pos_ik
+
+# Endpoint Pose(s) to request Inverse-Kinematics joint solutions for.
+# This is copied from baxter_core_msgs/SolvePositionIK. If in the future we'll 
+# figure out how to import SolvePositionIK, then remove pose_stamp line here.   
+geometry_msgs/Pose pose
+
+---
+#Response definition
+bool result

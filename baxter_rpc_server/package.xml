@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>baxter_rpc_server</name>
+  <version>0.0.0</version>
+  <description>This package provides RPC (Remote Procedure Call) functionality for Baxter Research Robot for robot operation.</description>
+
+  <author email="dev@opensource-robotics.tokyo.jp">TORK</author>
+  <author email="iiysaito@opensource-robotics.tokyo.jp">Isaac I. Y. Saito</author>
+  <maintainer email="dev@opensource-robotics.tokyo.jp">TORK</maintainer>
+
+  <license>Apache License 2.0</license>
+
+  <!-- <url type="website">http://wiki.ros.org/baxter_rpc_server</url> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>baxter_core_msgs</run_depend>
+  <run_depend>baxter_interface</run_depend>
+  <run_depend>baxter_rpc_msgs</run_depend>
+  <run_depend>tork_rpc_util</run_depend>
+
+  <export />
+</package>
