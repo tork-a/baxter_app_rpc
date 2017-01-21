@@ -10,13 +10,16 @@
 
   <license>Apache License 2.0</license>
 
-  <!-- <url type="website">http://wiki.ros.org/baxter_rpc_server</url> -->
+  <!-- <url type="website">http://wiki.ros.org/baxter_rpc_servers_handler</url> -->
 
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>baxter_core_msgs</run_depend>
-  <run_depend>baxter_interface</run_depend>
+  <run_depend version_gt='1.2.0'>baxter_interface</run_depend> <!-- Needs merged https://github.com/RethinkRobotics/baxter_interface/pull/80, so the current released version doesn't work. -->
   <run_depend>baxter_rpc_msgs</run_depend>
   <run_depend>tork_rpc_util</run_depend>
+
+  <test_depend>baxter_gazebo</test_depend>
+  <test_depend>rostest</test_depend>
 
   <export />
 </package>

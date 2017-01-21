@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from tork_rpc_util.sample_baxter import SampleBaxterRpc
+from baxter_rpc_server.sample_rpc import SampleRpcBaxter
 
 if __name__ == '__main__':
-    sample_rpc = SampleBaxterRpc()
+    sample_rpc = SampleRpcBaxter()

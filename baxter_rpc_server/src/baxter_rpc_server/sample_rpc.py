@@ -26,10 +26,10 @@ import rospy
 from baxter_rpc_msgs.srv import (
     SolvePositionIkParts
 )
-from tork_rpc_util.baxter_rpc_server import BaxterRpcServer
+from baxter_rpc_server.baxter_rpc_server import BaxterRpcServer
 
 
-class SampleBaxterRpc(object):
+class SampleRpcBaxter(object):
     '''
     RPC sample methods for Baxter. Intended to be called from main method
     within this same python file.

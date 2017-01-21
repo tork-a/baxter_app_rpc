@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find baxter_gazebo)/launch/baxter_world.launch">
+    <arg name="gui" value="false"/>
+  </include>
+  <include file="$(find baxter_rpc_server)/launch/rpc.launch" />
+
+  <test pkg="baxter_rpc_server" type="test_rpc.py" test-name="baxter_rpc" time-limit="300" />
+</launch>

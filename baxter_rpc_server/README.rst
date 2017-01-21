@@ -28,7 +28,7 @@ Run RPC nodes on simulation
 
 ::
 
-  rosrun tork_rpc_util rpc_server_script.py
+  rosrun tork_rpc_util rpc_servers_handler_script.py
 
 Run sample remote invocations
 ------------------------------

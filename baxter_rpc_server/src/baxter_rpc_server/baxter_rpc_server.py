@@ -23,7 +23,7 @@ from baxter_rpc_msgs.srv import (
 from geometry_msgs.msg import Pose, Quaternion
 import rospy
 
-from rpc_server import ActionServiceInfo, RosRpcServer
+from rpc_servers_handler import ActionServiceInfo, RpcServersHandler
 
 
 class ActionServiceNameDict(object):
@@ -33,13 +33,13 @@ class ActionServiceNameDict(object):
     cartesian_move = 'srv_cartesian_move'
 
 
-class BaxterRpcServer(RosRpcServer):
+class BaxterRpcServer(RpcServersHandler):
 
     def __init__(self):
         '''
         @param args: TODO
         '''
-        rospy.init_node('baxter_rpc_server')
+        rospy.init_node('baxter_rpc_servers_handler')
 
         # Init baxter_interface classes
         self._limb_left = baxter_interface.Limb('left')
