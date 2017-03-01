@@ -1,0 +1,13 @@
+<launch>
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+
+  <!-- Start Gazebo sim -->
+  <include file="$(find baxter_gazebo)/launch/baxter_world.launch" pass_all_args="true" />  
+
+  <!-- Start RPC server -->
+  <include file="$(find baxter_rpc_server)/launch/rpc.launch" />
+</launch>

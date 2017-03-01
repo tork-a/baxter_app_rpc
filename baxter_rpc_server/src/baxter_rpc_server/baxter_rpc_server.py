@@ -23,7 +23,7 @@ from baxter_rpc_msgs.srv import (
 from geometry_msgs.msg import Pose, Quaternion
 import rospy
 
-from rpc_servers_handler import ActionServiceInfo, RpcServersHandler
+from tork_rpc_util.rpc_servers_handler import ActionServiceInfo, RpcServersHandler
 
 
 class ActionServiceNameDict(object):

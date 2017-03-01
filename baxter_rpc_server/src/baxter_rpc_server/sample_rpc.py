@@ -26,7 +26,7 @@ import rospy
 from baxter_rpc_msgs.srv import (
     SolvePositionIkParts
 )
-from baxter_rpc_server.baxter_rpc_server import BaxterRpcServer
+from baxter_rpc_server import BaxterRpcServer
 
 
 class SampleRpcBaxter(object):

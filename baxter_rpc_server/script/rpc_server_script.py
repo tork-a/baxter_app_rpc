@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from tork_rpc_util.baxter_rpc_servers_handler import BaxterRpcServer
+from baxter_rpc_server.sample_rpc import BaxterRpcServer
 
 
 if __name__ == '__main__':
