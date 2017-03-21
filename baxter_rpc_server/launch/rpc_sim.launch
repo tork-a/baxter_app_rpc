@@ -6,7 +6,8 @@
   <arg name="use_sim_time" default="true"/>
 
   <!-- Start Gazebo sim -->
-  <include file="$(find baxter_gazebo)/launch/baxter_world.launch" pass_all_args="true" />  
+  <include file="$(find baxter_gazebo)/launch/baxter_world.launch"
+           pass_all_args="true" />  
 
   <!-- Start RPC server -->
   <include file="$(find baxter_rpc_server)/launch/rpc.launch" />

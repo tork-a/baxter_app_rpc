@@ -1,3 +1,4 @@
 <launch>
-  <node pkg="baxter_rpc_server" type="rpc_server_script.py" name="rpc_servers_handler" respawn="true" /> 
+  <node pkg="baxter_rpc_server" type="rpc_server_script.py"
+        name="rpc_servers_handler" respawn="true" /> 
 </launch>

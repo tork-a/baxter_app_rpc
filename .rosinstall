@@ -1,0 +1,15 @@
+# This file is intended to be used by wstool.
+# Listed projects are some applications of RPC (Remote Procedure Call)
+# for ROS-based robots.   
+- git:
+    uri: https://github.com/tork-a/tork_rpc_util.git
+    local-name: tork-a/tork_rpc_util
+    version: master
+- git:
+    uri: https://github.com/tork-a/baxter_interface.git
+    local-name: tork-a/baxter_interface
+    version: impr/add/cartesiancommand
+- git:
+    uri: https://github.com/tork-a/baxter_app_rpc.git
+    local-name: tork-a/baxter_app_rpc
+    version: master
